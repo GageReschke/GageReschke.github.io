@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-DLZXDPYY92"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-DLZXDPYY92');
+</script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Process Engineering Co-op at Entegris — Gage Reschke</title>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,300;0,400;0,600;0,700;1,300&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --bg: #f8f6f2;
+      --white: #ffffff;
+      --ink: #1a1a18;
+      --ink2: #3d3d38;
+      --muted: #8a8a80;
+      --rule: #dedad4;
+      --accent: #c8521a;
+      --accent-light: #f0ebe3;
+      --accent2: #2b4c7e;
+      --font-serif: 'Fraunces', Georgia, serif;
+      --font-sans: 'DM Sans', sans-serif;
+      --max: 1000px;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body { background: var(--bg); color: var(--ink); font-family: var(--font-sans); font-size: 15px; line-height: 1.65; }
+
+    /* NAV */
+    nav {
+      position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+      background: rgba(248,246,242,0.92); backdrop-filter: blur(10px);
+      border-bottom: 1px solid var(--rule);
+      height: 60px; display: flex; align-items: center; justify-content: center;
+    }
+    .nav-inner {
+      max-width: var(--max); width: 100%; padding: 0 48px;
+      display: flex; align-items: center; justify-content: space-between;
+    }
+    .nav-back {
+      display: flex; align-items: center; gap: 8px;
+      font-family: var(--font-sans); font-size: 13px;
+      color: var(--muted); text-decoration: none;
+      transition: color 0.18s;
+    }
+    .nav-back:hover { color: var(--ink); }
+    .nav-back svg { width: 16px; height: 16px; }
+    .nav-name {
+      font-family: var(--font-serif); font-weight: 600; font-size: 17px;
+      color: var(--ink); letter-spacing: -0.3px;
+    }
+
+    /* HERO */
+    .project-hero {
+      padding-top: 60px;
+      max-width: var(--max); margin: 0 auto;
+      padding-left: 48px; padding-right: 48px;
+    }
+    .project-eyebrow {
+      display: flex; align-items: center; gap: 10px;
+      font-size: 11px; letter-spacing: 0.14em; text-transform: uppercase;
+      color: var(--accent); font-weight: 500;
+      margin-top: 60px; margin-bottom: 16px;
+    }
+    .eyebrow-line { width: 24px; height: 1px; background: var(--accent); }
+    .project-title {
+      font-family: var(--font-serif);
+      font-size: clamp(36px, 5vw, 56px);
+      font-weight: 700; letter-spacing: -1.5px; line-height: 1.05;
+      margin-bottom: 24px;
+    }
+    .project-title em { font-style: italic; font-weight: 300; color: var(--accent); }
+    .project-meta-row {
+      display: flex; gap: 32px; flex-wrap: wrap;
+      padding: 24px 0; border-top: 1px solid var(--rule); border-bottom: 1px solid var(--rule);
+      margin-bottom: 48px;
+    }
+    .meta-item { display: flex; flex-direction: column; gap: 4px; }
+    .meta-label { font-size: 10px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--muted); }
+    .meta-value { font-size: 14px; font-weight: 500; color: var(--ink); }
+
+    /* PHOTO GRID */
+    .photo-hero {
+      width: 100%; aspect-ratio: 16/9;
+      object-fit: cover; border-radius: 6px;
+      border: 1px solid var(--rule);
+      margin-bottom: 12px;
+    }
+    .photo-grid {
+      display: grid; grid-template-columns: 1fr 1fr;
+      gap: 12px; margin-bottom: 64px;
+    }
+    .photo-grid img {
+      width: 100%; aspect-ratio: 4/3;
+      object-fit: cover; border-radius: 6px;
+      border: 1px solid var(--rule);
+    }
+
+    /* CONTENT */
+    .content-wrap {
+      max-width: var(--max); margin: 0 auto;
+      padding: 0 48px 100px;
+    }
+    .content-grid {
+      display: grid; grid-template-columns: 1fr 280px;
+      gap: 64px; align-items: start;
+    }
+    .content-body h2 {
+      font-family: var(--font-serif);
+      font-size: 24px; font-weight: 700; letter-spacing: -0.5px;
+      margin-bottom: 16px; margin-top: 40px;
+    }
+    .content-body h2:first-child { margin-top: 0; }
+    .content-body p {
+      font-size: 15px; color: var(--ink2); line-height: 1.8;
+      margin-bottom: 16px;
+    }
+    .content-body ul {
+      list-style: none; display: flex; flex-direction: column; gap: 10px;
+      margin-bottom: 20px;
+    }
+    .content-body ul li {
+      font-size: 14px; color: var(--ink2);
+      display: flex; align-items: baseline; gap: 10px;
+      line-height: 1.65;
+    }
+    .content-body ul li::before {
+      content: '—'; color: var(--accent); flex-shrink: 0; font-size: 12px;
+    }
+
+    /* SIDEBAR */
+    .sidebar { position: sticky; top: 80px; }
+    .sidebar-card {
+      background: var(--white); border: 1px solid var(--rule);
+      border-radius: 6px; padding: 24px; margin-bottom: 16px;
+    }
+    .sidebar-title {
+      font-size: 10px; letter-spacing: 0.12em; text-transform: uppercase;
+      color: var(--accent); font-weight: 500; margin-bottom: 16px;
+    }
+    .sidebar-tags { display: flex; flex-wrap: wrap; gap: 8px; }
+    .tag {
+      font-size: 11px; letter-spacing: 0.06em;
+      padding: 5px 10px; border-radius: 2px;
+      border: 1px solid var(--rule); color: var(--muted);
+    }
+    .tag.hl { border-color: rgba(200,82,26,0.25); color: var(--accent); background: rgba(200,82,26,0.05); }
+    .sidebar-stat { margin-bottom: 16px; }
+    .sidebar-stat:last-child { margin-bottom: 0; }
+    .sidebar-stat-num {
+      font-family: var(--font-serif); font-size: 32px; font-weight: 700;
+      letter-spacing: -1px; line-height: 1; margin-bottom: 2px;
+    }
+    .sidebar-stat-num span { color: var(--accent); }
+    .sidebar-stat-label { font-size: 12px; color: var(--muted); }
+
+    /* BACK BTN */
+    .back-btn {
+      display: inline-flex; align-items: center; gap: 8px;
+      margin-top: 48px;
+      padding: 11px 24px; font-family: var(--font-sans);
+      font-size: 13px; font-weight: 500;
+      text-decoration: none; border-radius: 3px;
+      border: 1.5px solid var(--rule); color: var(--ink);
+      transition: all 0.18s;
+    }
+    .back-btn:hover { border-color: var(--ink); }
+
+    .project-intro { font-size: 17px; color: var(--ink2); line-height: 1.7; max-width: 680px; margin-bottom: 48px; }
+    .photo-placeholder { display: none; }
+
+    @media (max-width: 768px) {
+      .nav-inner, .project-hero, .content-wrap { padding-left: 24px; padding-right: 24px; }
+      .content-grid { grid-template-columns: 1fr; }
+      .sidebar { position: static; }
+      .photo-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <div class="nav-inner">
+    <a href="index.html" class="nav-back">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="15 18 9 12 15 6"/></svg>
+      Back to portfolio
+    </a>
+    <div class="nav-name">Gage Reschke</div>
+  </div>
+</nav>
+
+<div class="project-hero">
+  <div class="project-eyebrow"><span class="eyebrow-line"></span>Co-op — Jul 2026 to Present</div>
+  <h1 class="project-title">Process Engineering<br><em>Co-op</em><br>at Entegris</h1>
+  <div class="project-meta-row">
+    <div class="meta-item"><span class="meta-label">Company</span><span class="meta-value">Entegris Inc.</span></div>
+    <div class="meta-item"><span class="meta-label">Role</span><span class="meta-value">Process Engineering Co-op</span></div>
+    <div class="meta-item"><span class="meta-label">Timeline</span><span class="meta-value">Jul 2026 – Present</span></div>
+    <div class="meta-item"><span class="meta-label">Tools</span><span class="meta-value">Ignition Perspective, SolidWorks</span></div>
+  </div>
+  <p class="project-intro">Working on the production floor alongside operators and engineers, I track down the causes of inspection data issues, build tools that make inspection faster and more consistent, and give operators what they need to solve routine problems themselves.</p>
+</div>
+
+<div class="content-wrap">
+  <!-- PHOTOS: once you have approved, non-confidential photos, uncomment and swap in your images.
+  <img class="photo-hero" src="images/entegris-hero.jpg" alt="Describe the photo" />
+  <div class="photo-grid">
+    <img src="images/entegris-1.jpg" alt="Describe the photo" />
+    <img src="images/entegris-2.jpg" alt="Describe the photo" />
+  </div>
+  -->
+
+  <div class="content-grid">
+    <div class="content-body">
+      <h2>Centralized inspection system</h2>
+      <p>My largest project has been replacing the per-product Excel sheets used for inspection with a single, work-order-based inspection system built in Ignition Perspective. Instead of operators finding and filling out a separate spreadsheet for each product, inspections now run through one centralized system tied to the work order.</p>
+      <ul>
+        <li>Designed and built the system in Ignition Perspective to replace separate per-product Excel sheets</li>
+        <li>Iterated on the design over several months, using operator feedback and inspection times to guide each revision</li>
+      </ul>
+
+      <h2>Root cause analysis</h2>
+      <p>Day to day, I analyze inspection data to find problems and work back to what caused them, then put corrections in place.</p>
+      <ul>
+        <li>Traced inspection data issues to root causes across process equipment and inputs, including ovens, powder mixers, and recipes</li>
+        <li>Implemented corrective actions once causes were confirmed</li>
+      </ul>
+
+      <h2>Greenforming troubleshooting flowchart</h2>
+      <p>I created a reactive troubleshooting flowchart for the membrane greenforming process. It walks operators through diagnosing and resolving minor issues directly on the floor, so routine problems no longer have to wait for an engineer.</p>
+
+      <h2>3D scanner fixtures</h2>
+      <p>To streamline inspection, I designed multiple SolidWorks fixtures for a 3D scanner, each sized for a different range of parts. I also use SolidWorks for design work and documentation across several other projects.</p>
+    </div>
+
+    <div class="sidebar">
+      <div class="sidebar-card">
+        <div class="sidebar-title">Tools & Skills</div>
+        <div class="sidebar-tags">
+          <span class="tag hl">Ignition Perspective</span>
+          <span class="tag hl">SolidWorks</span>
+          <span class="tag hl">Root Cause Analysis</span>
+          <span class="tag">Process Engineering</span>
+          <span class="tag">Fixture Design</span>
+          <span class="tag">3D Scanning</span>
+          <span class="tag">Data Analysis</span>
+          <span class="tag">Technical Documentation</span>
+        </div>
+      </div>
+      <a href="index.html" class="back-btn">← Back to portfolio</a>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
